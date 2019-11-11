@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-{% load staticfiles %}
+{% load static %}
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,13 +7,13 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
-    />
-    <link rel="stylesheet" href="{% static 'css/materialize.css' %}" />
-    <link rel="stylesheet" href="{% static 'css/materialize.min.css' %}" />
-    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+{#    <link#}
+{#      rel="stylesheet"#}
+{#      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"#}
+{#    />#}
+    <link rel="stylesheet" href="{% static 'content/css/materialize.css' %}" />
+    <link rel="stylesheet" href="{% static 'content/css/Materialize.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'content/css/style.css' %}" />
 
     <title>Home page</title>
   </head>
@@ -92,11 +92,11 @@
       </ul>
     </div>
 
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-    <script src="{% static 'js/main.js' %}"></script>
-    <script src="{% static 'js/materialize.js' %}"></script>
-    <script src="{% static 'js/materialize.min.js' %}"></script>
+{#    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>#}
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="{% static 'content/js/Materialize.min.js' %}"></script>
+    <script src="{% static 'content/js/materialize.js' %}"></script>
+    <script src="{% static 'content/js/init.js' %}"></script>
   </body>
 </html>
