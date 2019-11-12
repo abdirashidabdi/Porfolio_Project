@@ -7,10 +7,7 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-{#    <link#}
-{#      rel="stylesheet"#}
-{#      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"#}
-{#    />#}
+
     <link rel="stylesheet" href="{% static 'content/css/materialize.css' %}" />
     <link rel="stylesheet" href="{% static 'content/css/Materialize.min.css' %}" />
     <link rel="stylesheet" href="{% static 'content/css/style.css' %}" />
@@ -18,7 +15,7 @@
     <title>Home page</title>
   </head>
   <body>
-    <nav class="c-nav lighten-1" role="navigation">
+    <nav class="c-nav lighten-1 black role="navigation">
       <div class="nav-wrapper container">
         <a href="" class="brand-logo logoA"> <span class="A">A.</span></a>
         <ul class="right hide-on-med-and-down">
@@ -39,61 +36,45 @@
         >
       </div>
     </nav>
-    <div class="slider">
-      <ul class="slides">
-        <li>
-          <img
-            src="https://images.pexels.com/photos/830891/pexels-photo-830891.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-          />
-          <!-- random image -->
-          <div class="caption center-align">
-            <h3>This is our big Tagline!</h3>
-            <h5 class="light grey-text text-lighten-3">
-              Here's our small slogan.
-            </h5>
-          </div>
-        </li>
-        <li>
-          <img
-            src="https://images.pexels.com/photos/830891/pexels-photo-830891.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-          />
-          <!-- random image -->
-          <div class="caption left-align">
-            <h3>Left Aligned Caption</h3>
-            <h5 class="light grey-text text-lighten-3">
-              Here's our small slogan.
-            </h5>
-          </div>
-        </li>
-        <li>
-          <img
-            src="https://images.pexels.com/photos/830891/pexels-photo-830891.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-          />
-          <!-- random image -->
-          <div class="caption right-align">
-            <h3>Right Aligned Caption</h3>
-            <h5 class="light grey-text text-lighten-3">
-              Here's our small slogan.
-            </h5>
-          </div>
-        </li>
-        <li>
-          <img
-            src="https://images.pexels.com/photos/830891/pexels-photo-830891.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-          />
-          <!-- random image -->
-          <div class="caption center-align">
-            <h3>This is our big Tagline!</h3>
-            <h5 class="light grey-text text-lighten-3">
-              Here's our small slogan.
-            </h5>
-          </div>
-        </li>
-      </ul>
-    </div>
+<div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="https://images.pexels.com/photos/290595/pexels-photo-290595.jpeg"> <!-- random image -->
+        <div class="caption center-align">
+          <h3 class="black-text">I’M MR.RASHID</h3>
+          <h5 class=" black-text">Web Designer & Developer.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="https://images.pexels.com/photos/1294671/pexels-photo-1294671.jpeg"> <!-- random image -->
+        <div class="caption left-align">
+          <button class="contact">
+              <a href="#contact-sec" style="text-decoration:none;">Contact</a>
+          </button>
+            <button class="resume">
+                <i class="far fa-file fa-1x"></i> <a href="./files/My resume13.pdf" style="text-decoration:none;">Resume</a>
+            </button>
+        </div>
+      </li>
+      <li>
+        <img src="https://images.pexels.com/photos/378570/pexels-photo-378570.jpeg"> <!-- random image -->
+        <div class="caption right-align">
+          <h3>Right Aligned Caption</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="https://images.pexels.com/photos/1181676/pexels-photo-1181676.jpeg"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>This is our big Tagline!</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+    </ul>
+  </div>
 
 
-{#    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>#}
+
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="{% static 'content/js/Materialize.min.js' %}"></script>
     <script src="{% static 'content/js/materialize.js' %}"></script>
