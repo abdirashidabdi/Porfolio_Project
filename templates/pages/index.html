@@ -7,6 +7,7 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
     <link rel="stylesheet" href="{% static 'content/css/materialize.css' %}" />
     <link rel="stylesheet" href="{% static 'content/css/Materialize.min.css' %}" />
@@ -15,18 +16,18 @@
     <title>Home page</title>
   </head>
   <body>
-    <nav class="c-nav lighten-1 black role="navigation">
+    <nav class=" section grey darken-4 m2" role="navigation">
       <div class="nav-wrapper container">
         <a href="" class="brand-logo logoA"> <span class="A">A.</span></a>
         <ul class="right hide-on-med-and-down">
-          <li><a href="#">Home</a></li>
+          <li><a href="#" class="hoverable yellow-text darken-4">Home</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Portfolio</a></li>
           <li><a href="#">Contact Me</a></li>
         </ul>
 
         <ul id="nav-mobile" class="sidenav">
-          <li><a href="#">Home</a></li>
+          <li><a href="#" class="hoverable yellow">Home</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Portfolio</a></li>
           <li><a href="#">Contact Me</a></li>
@@ -47,13 +48,18 @@
       </li>
       <li>
         <img src="https://images.pexels.com/photos/1294671/pexels-photo-1294671.jpeg"> <!-- random image -->
-        <div class="caption left-align">
-          <button class="contact">
-              <a href="#contact-sec" style="text-decoration:none;">Contact</a>
-          </button>
-            <button class="resume">
-                <i class="far fa-file fa-1x"></i> <a href="./files/My resume13.pdf" style="text-decoration:none;">Resume</a>
-            </button>
+        <div class="caption center-align">
+            <div class="raw">
+                <div class="col s12">
+                    <button class="contact btn white yellow-text "><a href="#contact-sec" style="text-decoration:none;">Contact</a></button>
+                </div>
+                <div class="raw">
+                    <div class="col s12">
+                        <button class="resume btn white-text yellow darken-2"><i class="far fa-file fa-1x"></i><a  class="white-text" style="text-decoration:none;">Resume</a></button>
+                    </div>
+                </div>
+
+            </div>
         </div>
       </li>
       <li>
@@ -72,7 +78,18 @@
       </li>
     </ul>
   </div>
+   <!-- social media section -->
 
+    <section class=" black lighten-4 section">
+        <div class="row center-align">
+            <div class="col l4 s2"></div>
+            <div class="col l1 s2"><a href="" class=" "><i class="fab fa-github white-text fa-3x"></i></a></div>
+            <div class="col l1 s2"><a href="" class=""><i class="fab fa-facebook white-text fa-3x"></i></a></div>
+            <div class="col l1 s2"><a href="" class=""><i class="fab fa-linkedin white-text fa-3x"></i></a></div>
+            <div class="col l1 s2"><a href="" class="" ><i class="fas fa-envelope white-text fa-3x"></i></a></div>
+            <div class="col l4 s2"></div>
+        </div>
+    </section>
 
 
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
