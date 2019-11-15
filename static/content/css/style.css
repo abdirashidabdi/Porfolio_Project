@@ -1,14 +1,12 @@
-/* Custom Stylesheet */
-/**
- * Use this file to override Materialize files so you can update
- * the core Materialize files in the future
- *
- * Made By MaterializeCSS.com
- */
+@import url('https://fonts.googleapis.com/css?family=Cherry+Swash|Elsie+Swash+Caps|Questrial|Radley|Rajdhani|Rambla&display=swap');
 
 .icon-block {
   padding: 0 15px;
 }
 .icon-block .material-icons {
 	font-size: inherit;
+}
+.nav-large .nav-large-ul a{
+  font-family: 'Rambla', sans-serif;
+    font-size: 30px;
 }

@@ -4,16 +4,8 @@
   <head>
     <meta charset="UTF-8" />
     <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-      crossorigin="anonymous"
-    />
-
+      href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"/>
     <link rel="stylesheet" href="{% static 'content/css/materialize.css' %}" />
     <link
       rel="stylesheet"
@@ -24,9 +16,10 @@
     <title>Home page</title>
   </head>
   <body>
-    <nav class="  grey darken-4 m2 " role="navigation">
+    <nav class="  grey darken-4 m2 nav-larg " role="navigation">
       <div class="nav-wrapper container">
-        <form class=" hide-on-med-and-up">
+        <!-- search bar starts here -->
+        <form class=" hide-on-large-only">
           <div class="input-field">
             <input id="search" type="search" required />
             <label class="label-icon" for="search"
@@ -35,25 +28,22 @@
             <i class="material-icons">close</i>
           </div>
         </form>
-        <a href="" class="brand-logo left hide-on-med-and-down"> A</a>
-        <ul class="right hide-on-med-and-down">
-          <li>
+        <!-- search bar ends here -->
+        <!-- --------------------------------------------------------------------------------- -->
 
-    <nav>
-        <nav>
-              <div class="nav-wrapper"></div>
+        <!-- logo starts here -->
+        <a href="" class="brand-logo  hide-on-med-and-down" id="logo-container"> A</a>
+          <a href="" class="brand-logo center hide-on-large-only">A</a>
+        <!-- logo ends -->
+        <!-- -------------------------------------------------------------------------------- -->
 
-          </li>
+        <!-- navbar content starts here  -->
+        <ul class="right hide-on-med-and-down  grey darken-4 nav-large-ul">
           <li><a href="#" class=" yellow-text darken-4">Home</a></li>
           <li><a href="#">About</a></li>
           <li>
-            <a
-              class="dropdown-trigger btn grey"
-              href="#"
-              data-target="dropdown1"
-              >my Services
-              <i class="material-icons right">arrow_drop_down</i></a
-            >
+            <a class="dropdown-trigger btn grey" href="#" data-target="dropdown1">my Services<i class="material-icons right">arrow_drop_down</i></a>
+          </li>
             <!-- Dropdown Structure -->
             <ul id="dropdown1" class="dropdown-content">
               <li><a href="#">Project Tracker</a></li>
@@ -68,8 +58,12 @@
             ><span class="white-text">Login</span> / <span class="yellow-text">Register</span></a
           >
         </ul>
+      </div>
+    </nav>
 
         <!-- mobile navbar-->
+    <nav class="grey darken-4 hide-on-large-only">
+      <div>
         <ul id="nav-mobile" class="sidenav">
           <li><a href="#" class=" yellow">Home</a></li>
           <li><a href="#">About</a></li>
